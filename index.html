@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motohub</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <!-- <li><a href="#availability">Availability</a></li> -->
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+        <section id="bar" class="header">
+            <img src="./images/designer-removebg-preview.png" alt="logo" width="200" height="200">
+        </section>
+    </header>
+    <div class="horizontal-line-with-text">
+        <hr class="h">
+        <span class="line-text">Welcome to our Family</span>
+    </div>
+    <main>
+       
+        <section id="popular-bikes" class="popular-bikes">
+            <h2>Popular Bikes</h2>
+            <div class="bike-list">
+                <div class="bike-item">
+                    <img src="./images/himalyan.jpg" alt="Bike 1">
+                   
+                </div>
+                <div class="bike-item">
+                    <img src="./images/gt650.jpg" alt="Bike 2">
+                    
+                </div>
+                <div class="bike-item">
+                    <img src="./images/hunter.jpg" alt="Bike 3">
+                   
+                </div>
+                <div class="bike-item">
+                    <img src="./images/r15.jpg" alt="Bike 4">
+                   
+                </div>
+                <div class="bike-item">
+                    <img src="./images/mt.jpg" alt="Bike 5">
+                    
+                </div>
+                <div class="bike-item">
+                    <img src="./images/ktm.jpg"Bike 6">
+                   
+                </div>
+                <div class="bike-item">
+                    <img src="./images/classic.jpg" alt="Bike 7">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section id="calculate-price" class="calculate-price">
+            <h2>Calculate Total Price</h2>
+            <div>
+                <label for="bikeType">Select Bike Type:</label>
+                <select id="bikeType">
+                    <option value="1999">Himalayan - ₹1999/day</option>
+                    <option value="2499">GT650 - ₹2499/day</option>
+                    <option value="1499">Hunter - ₹1499/day</option>
+                    <option value="999">R15 - ₹999/day</option>
+                    <option value="999">MT - ₹999/day</option>
+                    <option value="1199">KTM - ₹1199/day</option>
+                    <option value="1799">Classic - ₹1799/day</option>
+                </select>
+            </div>
+            <div>
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate">
+            </div>
+            <div>
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate">
+            </div>
+            <div>
+                <button onclick="calculateTotalPrice()">Calculate</button>
+            </div>
+            <div id="totalPrice"></div>
+        </section>
+    </main>
+    <main>
+        <section id="states" class="states">
+            <h1>We are available on</h1>
+            <div class="states-list">
+                <div class="state-item">
+                    <img src="./images/india gate.png" alt="state 1">
+                    <h3>Delhi</h3>
+                   
+                </div>
+                <div class="state-item">
+                    <img src="./images/gateway of india.png" alt="state 2">
+                    <h3>Mumbai</h3>
+                </div>
+                <div class="state-item">
+                    <img src="./images/dhoni.png" alt="state 3">
+                    <h3>Jharkhand</h3>
+                </div>
+                <div class="state-item">
+                    <img src="./images/goa.png" alt="state 4">
+                    <h3>Goa</h3>
+                </div>
+                <div class="state-item">
+                    <img src="./images/howrahbridge.png" alt="Bike 5">
+                    <h3>Kolkata</h3>
+                </div>
+                <div class="state-item">
+                    <img src="./images/tea.png" alt="state" >
+                    <h3>Assam</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <main>
+        <section id="bike-prices" class="bike-prices">
+            <h2>Bike Rental Prices</h2>
+            <div class="dropdown">
+                <select id="bikeDropdown">
+                    <option value="" disabled selected>Select a Bike</option>
+                    <option value="Himalayan">Himalayan - ₹1999/day</option>
+                    <option value="GT650">GT650 - ₹2499/day</option>
+                    <option value="Hunter">Hunter - ₹1499/day</option>
+                    <option value="R15">R15 - ₹999/day</option>
+                    <option value="MT">MT - ₹999/day</option>
+                    <option value="KTM">KTM - ₹1199/day</option>
+                    <option value="Classic">Classic - ₹1799/day</option>
+                </select>
+            </div>
+        </section>
+    </main> -->
+   
+    <footer>
+        <!-- <p>&copy; 2024 Bike Rental System</p> -->
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

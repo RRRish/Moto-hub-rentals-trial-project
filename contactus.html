@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Motohub</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="bike2.html">Home</a></li>
+                <!-- <li><a href="#availability">Availability</a></li> -->
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+        <section id="bar" class="header">
+            <img src="designer-removebg-preview.png" alt="logo" width="200" height="200">
+        </section>
+        
+    </header>
+    <main>
+        <section id="contact-us" class="contact-us">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us:</p>
+            <p><strong>Email:</strong> motohubpvtltd@gmail.com</p>
+            <p><strong>Phone:</strong> +91 1234567899</p>
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                 <div class="form-group">
+                    <label for="phone number">Phone Number:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    
+    <!-- <footer>
+        <p>&copy; 2024 Motohub. All rights reserved.</p>
+    </footer> -->
+</body>
+</html>
