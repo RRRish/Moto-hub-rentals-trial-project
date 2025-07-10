@@ -1,125 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Motohub</title>
-    <link rel="stylesheet" href="./HTML pages/CSS/styles2.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./HTML pages/CSS/styles2.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <!-- <li><a href="#availability">Availability</a></li> -->
-                <li><a href="./HTML pages/contactus.html">Contact Us</a></li>
-                <li><a href="./HTML pages/aboutus.html">About Us</a></li>
-            </ul>
-        </nav>
-        <section id="bar" class="header">
-            <img src="./images/designer-removebg-preview.png" alt="logo" width="200" height="200">
-        </section>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <!-- <li><a href="#availability">Availability</a></li> -->
+          <li><a href="./HTML pages/contactus.html">Contact Us</a></li>
+          <li><a href="./HTML pages/contactus.html">About Us</a></li>
+        </ul>
+      </nav>
+      <section id="bar" class="header">
+        <img
+          src="./images/designer-removebg-preview.png"
+          alt="logo"
+          width="200"
+          height="200"
+        />
+      </section>
     </header>
     <div class="horizontal-line-with-text">
-        <hr class="h">
-        <span class="line-text">Welcome to our Family</span>
+      <hr class="h" />
+      <span class="line-text">Welcome to our Family</span>
     </div>
+    <section id="calculate-price" class="calculate-price">
+      <h2>Calculate Total Price</h2>
+      <div>
+        <label for="bikeType">Select Bike Type:</label>
+        <select id="bikeType">
+          <option value="1999">Himalayan</option>
+          <option value="2499">GT650</option>
+          <option value="1499">Hunter</option>
+          <option value="999">R15</option>
+          <option value="999">MT</option>
+          <option value="1199">KTM</option>
+          <option value="1799">Classic</option>
+        </select>
+      </div>
+      <div id="Date">
+        <div id="date-field">
+          <label for="startDate">Start Date:</label>
+          <input type="date" id="startDate" />
+        </div>
+        <div id="date-field">
+          <label for="endDate">End Date:</label>
+          <input type="date" id="endDate" />
+        </div>
+      </div>
+      <div class="insure">
+        <label for="Insurance">Want Insurence</label>
+        <input type="checkbox" name="" id="check-yes" /> Yes
+
+        <input type="checkbox" name="" id="check-no" />No
+      </div>
+      <div>
+        <button onclick="calculateTotalPrice()">Calculate</button>
+      </div>
+      <div id="totalPrice"></div>
+    </section>
+    <section>
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="https://shorturl.at/TgiZ1" alt="bike-img" />
+          </div>
+          <div class="slide">
+            <img src="https://shorturl.at/dxXPQ" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://shorturl.at/LfCAl" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://shorturl.at/PRkxe" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://shorturl.at/sUt9i" alt="" />
+          </div>
+          <div class="slide">
+            <img
+              src="https://static2.tripoto.com/media/filter/tst/img/1336401/TripDocument/1581531780_2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/e5/f2/e1/more-than-just-a-tour.jpg?w=1200&h=900&s=1"
+              alt=""
+            />
+          </div>
+
+          <!-- Duplicate for infinite scroll effect -->
+          <div class="slide">
+            <img src="https://shorturl.at/TgiZ1" alt="bike-img" />
+          </div>
+          <div class="slide">
+            <img src="https://shorturl.at/dxXPQ" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://shorturl.at/LfCAl" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://shorturl.at/PRkxe" alt="" />
+          </div>
+          <div class="slide">
+            <img src="https://shorturl.at/sUt9i" alt="" />
+          </div>
+          <div class="slide">
+            <img
+              src="https://static2.tripoto.com/media/filter/tst/img/1336401/TripDocument/1581531780_2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/e5/f2/e1/more-than-just-a-tour.jpg?w=1200&h=900&s=1"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <main>
-       
-        <section id="popular-bikes" class="popular-bikes">
-            <h2>Popular Bikes</h2>
-            <div class="bike-list">
-                <div class="bike-item">
-                    <img src="./images/himalyan.jpg" alt="Bike 1">
-                   
+      <section id="popular-bikes" class="popular-bikes">
+        <h2>Popular Bikes</h2>
+        <div class="bike-list">
+          <div class="bike-item">
+            <img src="./images/himalyan.jpg" alt="Bike 1" />
+          </div>
+          <div class="bike-item">
+            <img src="./images/gt650.jpg" alt="Bike 2" />
+          </div>
+          <div class="bike-item">
+            <img src="./images/hunter.jpg" alt="Bike 3" />
+          </div>
+          <div class="bike-item">
+            <img src="./images/r15.jpg" alt="Bike 4" />
+          </div>
+          <div class="bike-item">
+            <img src="./images/mt.jpg" alt="Bike 5" />
+          </div>
+          <div class="bike-item"><img src="./images/ktm.jpg"Bike 6"></div>
+          <div class="bike-item">
+            <img src="./images/classic.jpg" alt="Bike 7" />
+          </div>
+        </div>
+      </section>
+
+      <section class="choose">
+          <h1>Why to choose Us</h1>
+                <div class="choose-item">
+                    <label for="choose"> </label>
+                    <img  src="./images/roadside-assistance.png" alt="">
+                    <h3>24 hrs RSA Support</h3>
                 </div>
-                <div class="bike-item">
-                    <img src="./images/gt650.jpg" alt="Bike 2">
-                    
+                <div class="choose-item">
+                    <img src="./images/tools.png" alt="">
+                    <h3>Well Maintained Bikes</h3>
                 </div>
-                <div class="bike-item">
-                    <img src="./images/hunter.jpg" alt="Bike 3">
-                   
+                <div class="choose-item">
+                    <img src="./images/low-cost.png" alt="">
+                    <h3>Pocket friendly pricing</h3>
                 </div>
-                <div class="bike-item">
-                    <img src="./images/r15.jpg" alt="Bike 4">
-                   
+            </section>
+                <section class="choose2">
+                <div class="choose-item">
+                    <img src="./images/secure-payment.png" alt="">
+                    <h3>Secure Payment</h3>
                 </div>
-                <div class="bike-item">
-                    <img src="./images/mt.jpg" alt="Bike 5">
-                    
+                <div class="choose-item"> 
+                    <img src="./images/money-back-guarantee.png" alt="">
+                    <h3>Not satisfied from us, 100% Money Back</h3> 
                 </div>
-                <div class="bike-item">
-                    <img src="./images/ktm.jpg"Bike 6">
-                   
-                </div>
-                <div class="bike-item">
-                    <img src="./images/classic.jpg" alt="Bike 7">
-                    
-                </div>
-            </div>
-        </section>
+                <div class="choose-item">
+                    <img src="./images/verified-user.png" alt="">
+                    <h3>Verified Vendors</h3> 
+                 </div>
+      </section>
     </main>
+    <main></main>
     <main>
-        <section id="calculate-price" class="calculate-price">
-            <h2>Calculate Total Price</h2>
-            <div>
-                <label for="bikeType">Select Bike Type:</label>
-                <select id="bikeType">
-                    <option value="1999">Himalayan - ₹1999/day</option>
-                    <option value="2499">GT650 - ₹2499/day</option>
-                    <option value="1499">Hunter - ₹1499/day</option>
-                    <option value="999">R15 - ₹999/day</option>
-                    <option value="999">MT - ₹999/day</option>
-                    <option value="1199">KTM - ₹1199/day</option>
-                    <option value="1799">Classic - ₹1799/day</option>
-                </select>
-            </div>
-            <div>
-                <label for="startDate">Start Date:</label>
-                <input type="date" id="startDate">
-            </div>
-            <div>
-                <label for="endDate">End Date:</label>
-                <input type="date" id="endDate">
-            </div>
-            <div>
-                <button onclick="calculateTotalPrice()">Calculate</button>
-            </div>
-            <div id="totalPrice"></div>
-        </section>
-    </main>
-    <main>
-        <section id="states" class="states">
-            <h1>We are available on</h1>
-            <div class="states-list">
-                <div class="state-item">
-                    <img src="./images/india gate.png" alt="state 1">
-                    <h3>Delhi</h3>
-                   
-                </div>
-                <div class="state-item">
-                    <img src="./images/gateway of india.png" alt="state 2">
-                    <h3>Mumbai</h3>
-                </div>
-                <div class="state-item">
-                    <img src="./images/dhoni.png" alt="state 3">
-                    <h3>Jharkhand</h3>
-                </div>
-                <div class="state-item">
-                    <img src="./images/goa.png" alt="state 4">
-                    <h3>Goa</h3>
-                </div>
-                <div class="state-item">
-                    <img src="./images/howrahbridge.png" alt="Bike 5">
-                    <h3>Kolkata</h3>
-                </div>
-                <div class="state-item">
-                    <img src="./images/tea.png" alt="state" >
-                    <h3>Assam</h3>
-                </div>
-            </div>
-        </section>
+      <section id="states" class="states">
+        <h1>We are available on</h1>
+        <div class="states-list">
+          <div class="state-item">
+            <img src="./images/india gate.png" alt="state 1" />
+            <h3>Delhi</h3>
+          </div>
+          <div class="state-item">
+            <img src="./images/gateway of india.png" alt="state 2" />
+            <h3>Mumbai</h3>
+          </div>
+          <div class="state-item">
+            <img src="./images/dhoni.png" alt="state 3" />
+            <h3>Jharkhand</h3>
+          </div>
+          <div class="state-item">
+            <img src="./images/goa.png" alt="state 4" />
+            <h3>Goa</h3>
+          </div>
+          <div class="state-item">
+            <img src="./images/howrahbridge.png" alt="Bike 5" />
+            <h3>Kolkata</h3>
+          </div>
+          <div class="state-item">
+            <img src="./images/tea.png" alt="state" />
+            <h3>Assam</h3>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- <main>
         <section id="bike-prices" class="bike-prices">
@@ -138,10 +233,36 @@
             </div>
         </section>
     </main> -->
-   
-    <footer>
-        <!-- <p>&copy; 2024 Bike Rental System</p> -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img
+            src="./images/Screenshot_2025-07-10_193115-removebg-preview.png"
+            alt="Logo"
+            width="100"
+          />
+          <p>Motohub - Your Trusted Ride Partner</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="./HTML pages/contactus.html">Contact</a></li>
+            <li><a href="./HTML pages/aboutus.html">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Email: motohubworld@gmail.com</p>
+          <p>Phone: +91 6203675898</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Motohub. All rights reserved.</p>
+      </div>
     </footer>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
