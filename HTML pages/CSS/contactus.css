@@ -65,6 +65,9 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
 }
+/* .contact-us:hover{
+    transform: translateY(-5px);
+} */
 
 .contact-us h2 {
     margin-bottom: 20px;
@@ -80,6 +83,10 @@ main {
 
 .form-group {
     margin-bottom: 15px;
+    transition: transform 0.5s ease;
+}
+.form-group:hover{
+    transform: translateY(-5px);
 }
 
 .form-group label {
@@ -87,6 +94,7 @@ main {
     font-size: 1em;
     color: #333;
     margin-bottom: 5px;
+    transition: transform 0.5s ease;
 }
 
 .form-group input,
