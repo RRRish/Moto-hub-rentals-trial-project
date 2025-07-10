@@ -1,259 +1,355 @@
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    background-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  background-size: 100px;
+  background-image: url(".");
+  /* place-items: center; */
 }
 
-
 header {
-    background-image: url("./mountains-6058896_1.jpg");
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-    padding-top: 0.01%;
+  background-image: url("./mountains-6058896_1.jpg");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  padding-top: 0.01%;
 }
 
 .header {
-    text-align: center;
-    color: #080808e8;
+  text-align: center;
+  color: #080808e8;
 }
 
 .h {
-    border: 0;
-    height: 2px;
-    background-color: #333;
-    margin: 20px 0;
+  border: 0;
+  height: 2px;
+  background-color: #333;
+  margin: 20px 0;
 }
 
 .horizontal-line-with-text {
-    position: relative;
-    text-align: center;
-    margin: 20px 0;
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .horizontal-line-with-text .h {
-    border: 0;
-    height: 2px;
-    background-color: #333;
-    margin: 0;
+  border: 0;
+  height: 2px;
+  background-color: #333;
+  margin: 0;
 }
 
 .horizontal-line-with-text .line-text {
-    position: absolute;
-    top: -0.75em;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #f0f0f0;
-    padding: 0 10px;
-    color: #333;
+  position: absolute;
+  top: -0.75em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f0f0f0;
+  padding: 0 10px;
+  color: #333;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
 
 .nav-links li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #fdfdfd;
-    font-weight: bold;
-    padding: 5px 10px;
+  text-decoration: none;
+  color: #fdfdfd;
+  font-weight: bold;
+  padding: 5px 10px;
 }
 
 .nav-links a:hover {
-    background-color: #373434;
-    border-radius: 5px;
+  background-color: #373434;
+  border-radius: 5px;
 }
 
-
-
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 .popular-bikes {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  /* background-color: #fff; */
+  /* border-radius: 10px; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .popular-bikes h2 {
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: #3c3c3c;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #3c3c3c;
 }
 
 .bike-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .bike-item {
-    width: 100px;
-    height: 100px;
-    background-color: #f9f9f9;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #f9f9f9;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease;
+}
+.bike-item:hover{
+    transform: translateY(-5px);
 }
 
 .bike-item img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
 }
 
 .bike-item h3 {
-    margin: 10px 0 0 0;
-    font-size: 1em;
-    color: #333;
+  margin: 10px 0 0 0;
+  font-size: 1em;
+  color: #333;
 }
 
 .states {
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .states h2 {
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: #3c3c3c;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #3c3c3c;
 }
 
 .states-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .state-item {
-    width: 100px;
-    height: 100px;
-    background-color: #f9f9f9;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #f9f9f9;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .state-item img {
-    max-width: 70%;
-    max-height: 100%;
-    border-radius: 50%;
+  max-width: 70%;
+  max-height: 100%;
+  border-radius: 50%;
 }
 
 .state-item h3 {
-    margin: 10px 0 0 0;
-    font-size: 1em;
-    color: #333;
+  margin: 10px 0 0 0;
+  font-size: 1em;
+  color: #333;
 }
 .bike-prices {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
 }
 
 .bike-prices h2 {
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: #3c3c3c;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #3c3c3c;
 }
-
 .dropdown {
-    margin: 0 auto;
-    display: inline-block;
+  margin: 0 auto;
+  display: inline-block;
 }
 
 #bikeDropdown {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  /* width: 10px; */
 }
+
 .calculate-price {
-    text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 500px;
+  /* background-image: url("./generated-image\ \(2.1\).png"); */
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 500px;
 }
 
 .calculate-price h2 {
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: #3c3c3c;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #3c3c3c;
 }
 
 .calculate-price div {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .calculate-price label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 1.2em;
-    color: #333;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  color: #333;
 }
 
 .calculate-price select,
 .calculate-price input[type="number"],
 .calculate-price button {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .calculate-price button {
-    background-color: #cfbd6f;
-    color: white;
-    border: none;
-    cursor: pointer;
+  background-color: #cfbd6f;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .calculate-price button:hover {
-    background-color: #a4a753;
+  background-color: #a4a753;
 }
 
 #totalPrice {
-    font-size: 1.2em;
-    color: #333;
-    margin-top: 15px;
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 15px;
 }
-
+input[type="date"] {
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* font-weight: ; */
+}
+input[type="date"] {
+    background: url('./calendar.png') no-repeat right center;
+  background-size: 15px;
+  padding-right: 30px;
+  background-position: 75%;
+  /* background-position: 80%; */
+  }
+input[type="date"]::-webkit-calendar-picker-indicator {
+   opacity: 0;
+  }
+#Date {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+#date-field {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.slider {
+    height: 350px;
+    margin: auto;
+    position: relative;
+    width: 200%;
+    max-width: 1650px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  .slide-track {
+    display: flex;
+    width: calc(250px * 14); 
+    animation: scroll 40s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .slide {
+    height: 300px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    /* transform:  transform 0.5s ease; */
+  }
+  .slide:hover{
+   transform:  translateY(-10px);
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .slider::before,
+  .slider::after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  .slider::before {
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, #fff 0%, transparent 100%);
+  }
+  
+  .slider::after {
+    right: 0;
+    top: 0;
+    background: linear-gradient(to left, #fff 0%, transparent 100%);
+  }
